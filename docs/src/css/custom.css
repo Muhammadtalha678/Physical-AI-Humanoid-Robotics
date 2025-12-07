@@ -1,0 +1,219 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for the Physical AI & Humanoid Robotics Textbook */
+
+/* Textbook-specific styling */
+.textbook-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Learning objectives styling */
+.learning-objectives {
+  background-color: #f0f8ff;
+  border-left: 4px solid #007acc;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.learning-objectives h4 {
+  margin-top: 0;
+  color: #007acc;
+}
+
+/* Code example styling */
+.code-example {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 15px 0;
+  overflow-x: auto;
+}
+
+/* Assessment styling */
+.assessment {
+  background-color: #fff8dc;
+  border: 1px solid #ffd700;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+/* Navigation improvements */
+.navbar {
+  background-color: #2b3137;
+}
+
+/* Responsive design improvements */
+@media (max-width: 996px) {
+  .textbook-content {
+    padding: 0 20px;
+  }
+
+  /* Adjust navbar for mobile */
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  /* Mobile-friendly sidebar */
+  .sidebar {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+  }
+
+  /* Adjust content layout on mobile */
+  .docItemContainer {
+    max-width: 100% !important;
+    padding: 0 10px !important;
+  }
+
+  /* Mobile-friendly code blocks */
+  code {
+    font-size: 0.8rem !important;
+  }
+
+  pre {
+    font-size: 0.7rem !important;
+    padding: 10px !important;
+    overflow-x: auto;
+  }
+
+  /* Adjust table display on mobile */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Mobile-friendly navigation */
+  .navbar__item, .navbar__link {
+    font-size: 0.9rem;
+  }
+
+  /* Ensure adequate touch targets */
+  .navbar__link {
+    padding: 0.75rem;
+  }
+}
+
+/* Additional responsive breakpoints */
+@media (max-width: 768px) {
+  /* Adjust for smaller mobile screens */
+  .textbook-content {
+    padding: 0 10px;
+  }
+
+  /* Adjust headings for mobile */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Mobile-friendly learning objectives */
+  .learning-objectives {
+    padding: 10px;
+  }
+
+  /* Mobile-friendly assessment boxes */
+  .assessment {
+    padding: 10px;
+  }
+
+  /* Adjust spacing on small screens */
+  .margin-bottom--lg {
+    margin-bottom: 1.5rem;
+  }
+
+  .margin-top--lg {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ultra-mobile adjustments */
+  .navbar__brand {
+    display: none; /* Hide brand text on very small screens */
+  }
+
+  /* Further adjust text sizes */
+  body {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust buttons and interactive elements */
+  button, input, select, textarea {
+    font-size: 1rem; /* Ensure readable text in form elements */
+  }
+
+  /* Compact navigation items */
+  .navbar__items {
+    flex-wrap: wrap;
+  }
+}
+
+/* Custom styling for diagrams and figures */
+.diagram-container {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Week navigation styling */
+.week-navigation {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+/* Accessibility improvements */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
